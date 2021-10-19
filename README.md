@@ -1,2 +1,2 @@
-# KP_3sem_web
+# 3sem_KP_web
 repository for my coursework by web
