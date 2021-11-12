@@ -1,0 +1,117 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: dimgrey;
+}
+
+.header-container {
+    margin: 0px;
+    display: flex;
+    padding: 10px 20px;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 50px;
+}
+
+.header-logo {
+    border-radius: 50%;
+    background-color: brown;
+    position: relative;
+    z-index: 5;
+    width: 40px;
+    height: 40px;
+}
+
+.header-span-text {
+    font-family: "Times New Roman";
+    color: black;
+    font-size: 24px;
+    position: relative;
+}
+
+.menu-burger {
+    z-index: 5;
+    display: block;
+    position: relative;
+    width: 25px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.menu-burger span,
+.menu-burger::before,
+.menu-burger::after {
+    left: 0;
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    background-color: white;
+}
+
+.menu-burger::before,
+.menu-burger::after {
+    content: "";
+}
+
+.menu-burger::before {
+    top: 0;
+}
+
+.menu-burger::after {
+    bottom: 0;
+}
+
+.menu-burger span {
+    top: 50%;
+    transform: scale(1) translate(0px, -50%);
+}
+
+.menu-body {
+    position: fixed;
+    top: 0;
+    left: -260px;
+    width: 200px;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    padding: 100px 30px 30px 30px;
+    transition: left 0.5s;
+    overflow: auto;
+}
+
+.menu-body.active {
+    left: 0%;
+}
+
+.menu-body::before {
+    content: "";
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 70px;
+    background-color: dimgrey;
+    z-index: 2;
+}
+
+.menu-list > li {
+    margin: 0px 0px 40px 0px;
+}
+
+.menu-list > li:last-child {
+    margin-bottom: 150px;
+}
+
+.menu-link {
+    font-size: 24px;
+}
+
+.menu-link:hover {
+    background-color: violet;
+}
+
+.txt {
+    margin: 100px;
+}
