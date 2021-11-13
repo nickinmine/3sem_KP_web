@@ -1,3 +1,5 @@
+console.log('Hell0!');
+
 //burger
 const menuBurger = document.querySelector('.menu-burger');
 const menuBody = document.querySelector('.menu-body');
@@ -7,4 +9,3 @@ menuBurger.addEventListener("click", function (e) {
     headerLocker.classList.toggle('lock');
     menuBody.classList.toggle('active');
 });
-
