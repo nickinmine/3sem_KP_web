@@ -1,4 +1,4 @@
-console.log('Hell0!');
+console.log('Hell0! Если этот текст отображается в консоли, значит JavaScript подключен');
 
 //burger
 const menuBurger = document.querySelector('.menu-burger');
@@ -28,7 +28,7 @@ if (animItems.length > 0) {
                 pageYOffset < (animItemOffset + animItemHeight) &&
                 !animItem.classList.contains('visible')) {
                 animItem.classList.add('visible');
-            } //else { animItem.classList.remove('visible'); }
+            }
         }
     }
     function offset(element) {
